@@ -9,8 +9,8 @@ function Sidebar() {
 
 
     const sidebarOpen = () => {
-        menu_toggle?.classList?.toggle('is-active')
-        sidebar?.classList?.toggle('is-active')
+        menu_toggle?.classList.toggle('is-active')
+        sidebar?.classList.toggle('is-active')
     }
     return (
         <>
