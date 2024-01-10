@@ -4,20 +4,21 @@ import MenuIcon from '@mui/icons-material/Menu';
 function Sidebar() {
 
 
-    const menu_toggle = document.querySelector('.menu-toggle')
-    const sidebar = document.querySelector('.sidebar')
+
 
 
     const sidebarOpen = () => {
+        const menu_toggle = document.querySelector('.menu-toggle')
+        const sidebar = document.querySelector('.sidebar')
         menu_toggle?.classList.toggle('is-active')
         sidebar?.classList.toggle('is-active')
     }
     return (
         <>
-        
-            <div onClick={()=>sidebarOpen()} className='menu-toggle'>
+
+            <div onClick={() => sidebarOpen()} className='menu-toggle hover:brightness-200'>
                 <div className='hamburger'>
-                    <span><MenuIcon className='mt-10'/></span>
+                    <span><MenuIcon className='mt-10' /></span>
                 </div>
             </div>
 
