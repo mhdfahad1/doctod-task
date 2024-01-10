@@ -6,6 +6,9 @@ import facebook from '../images/Facebook.png'
 import email from '../images/email.png'
 import { useNavigate } from 'react-router-dom'
 import './Login.css'
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
+
 
 function Login() {
     const navigate=useNavigate()
@@ -27,8 +30,9 @@ function Login() {
         e.preventDefault()
         const {email,password}=user
         if(!email||!password){
-            alert('please fill the form completely')
+            toast.warning('please fill the form completely')
         }else{
+            toast.success('logined successfully')
             navigate('/dashboard')
         }
     }
@@ -74,7 +78,14 @@ function Login() {
                 </div>
 
             </div>
-
+            <ToastContainer
+                position="top-center"
+                autoClose={3000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                rtl={false}
+                theme="colored"
+            />
 
         </div>
     )

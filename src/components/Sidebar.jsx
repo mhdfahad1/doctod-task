@@ -1,12 +1,10 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Sidebar.css'
 import MenuIcon from '@mui/icons-material/Menu';
 function Sidebar() {
 
 
-
-
-
+// small screens open the side bar when the button is clicked
     const sidebarOpen = () => {
         const menu_toggle = document.querySelector('.menu-toggle')
         const sidebar = document.querySelector('.sidebar')
