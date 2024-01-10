@@ -131,13 +131,13 @@ function Header() {
 
                     <Box sx={{ flexGrow: 1 }} />
                     <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-                        <IconButton style={{ fontSize: "16px" }} className='text-black font-semibold me-4'>
+                        <IconButton style={{ fontSize: "16px" }} className='text-black font-medium me-4'>
                             Community
                         </IconButton>
-                        <IconButton style={{ fontSize: "16px" }} className='text-black font-semibold me-4'>
+                        <IconButton style={{ fontSize: "16px" }} className='text-black font-medium me-4'>
                             Courses
                         </IconButton>
-                        <IconButton style={{ fontSize: "16px" }} className='text-black font-semibold me-4'>
+                        <IconButton style={{ fontSize: "16px" }} className='text-black font-medium me-4'>
                             My Classes
                         </IconButton>
                         <IconButton style={{ fontSize: "16px" }} className='text-black'>
